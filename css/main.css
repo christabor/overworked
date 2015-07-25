@@ -6,11 +6,8 @@
 body {
 	background-color: #fff;
 	color: #4C372F;
+	font-weight: 100;
 	font-family: 'Signika', sans-serif;
-}
-em {
-	border-bottom-width: 1px;
-	border-bottom-style: dashed;
 }
 img {
 	width: auto;
@@ -70,8 +67,12 @@ nav a:hover {
 	text-align: center;
 }
 .lead {
-	text-transform: uppercase;
+	font-weight: 100;
+	font-family: Helvetica, arial;
 	display: inline-block;
+}
+small.lead {
+	text-transform: uppercase;
 }
 blockquote {
 	border-left: 3px solid #B62325;
