@@ -3,27 +3,76 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+html {
+	font-size: 62.5%;
+}
 body {
+	padding: 0;
+	margin: 0;
 	background-color: #fff;
 	color: #4C372F;
 	font-weight: 100;
+	font-size: 1.6rem;
 	font-family: 'Signika', sans-serif;
 }
 img {
 	width: auto;
 	max-width: 100%;
 }
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: 'IM Fell French Canon', serif;
 	margin-top: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	line-height: 1.45em;
+}
+h1 {
+	font-size: 12rem;
+}
+h2 {
+	font-size: 7rem;
+}
+h3 {
+	font-size: 3.5rem;
+}
+h4 {
+	font-family: 'Signika', sans-serif;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+}
+h5 {
+	font-size: 2.4rem;
+}
+h6 {
+	font-size: 2rem;
+}
+p {
+	font-size: 2rem;
+	margin-top: 1em;
+}
+p, ul, ol, dl {
+	margin-bottom: 1.4em;
+}
+ul, ol, dl {
+	font-size: 1.9rem;
+	list-style-type: square;
+	padding-left: 1em;
 }
 a {
 	color: #EF4036;
 	border-bottom: 1px dotted #ccc;
 }
+a, a:hover {
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
 a:hover {
 	color: white;
 	text-decoration: none;
+	border-bottom-style: solid;
 }
 .section-white a {
 	color: #EF4036;
@@ -35,7 +84,7 @@ a:hover {
 	color: white;
 }
 .section-red a:hover {
-	color: #CDE2F5;
+	color: #D2E8F5;
 }
 .section-blue a {}
 .section-blue a:hover {
@@ -48,16 +97,15 @@ nav a:hover {
 	color: #EF4036;
 	background-color: transparent;
 }
-
 .section-marker {
 	background-color: #725046;
 	text-shadow:none;
 	color: white;
-	padding: 10px;
+	padding: 10px 5px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 14px;
 	position: absolute;
-	top: -30px;
+	top: -20px;
 	z-index: 99;
 	width: 100px;
 	margin-left: -50px;
@@ -68,22 +116,43 @@ nav a:hover {
 }
 .lead {
 	font-weight: 100;
-	font-family: Helvetica, arial;
+	font-size: 2.4rem;
 	display: inline-block;
 }
-small.lead {
+.subtitle {
+	font-size: 1.8rem;
+	margin-top: 0;
+	margin-bottom: 2em;
+	display: block;
 	text-transform: uppercase;
+}
+.subsection {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	padding-top: 1em;
+	margin-top: 1em;
+}
+.section-white .subsection,
+.section-blue .subsection {
+	border-color: rgba(0, 0, 0, 0.1);
 }
 blockquote {
 	border-left: 3px solid #B62325;
-	font-size: 20px;
-	line-height: 36px;
+	font-size: 2.3rem;
+	line-height: 2.2em;
 	font-weight: 100;
 }
 blockquote cite {
 	font-size: 80%;
 	opacity: 0.8;
 	font-style: italic;
+}
+.amp {
+	font-family: Helvetica, arial;
+	font-weight: 100;
+	opacity: 0.5;
+}
+.title {
+	text-align: center;
 }
 .section, .section-thin {
 	position: relative;
@@ -104,7 +173,7 @@ blockquote cite {
 	color: #fff;
 }
 .section-blue {
-	background-color: #CDE2F5;
+	background-color: #D2E8F5;
 	text-shadow: 0 2px 1px #fff;
 	color: #4C372F;
 }
@@ -113,63 +182,37 @@ blockquote cite {
 	text-shadow: 0 2px 1px #1E130F;
 	color: #4C372F;
 }
-
-@media (max-width: 400px) {
-	h1 {
-		font-size: 60px;
-		line-height: 70px;
-	}
-	h2 {
-		font-size: 40px;
-		line-height: 50px;
-	}
+.citation-link,
+.citations {
+	font-size: 80%;
 }
-
-/* Flowtype setup */
-
-body {
- padding: 0;
- margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
- line-height: 1.45;
-}
-h1 { font-size: 3em; }
-h2 { font-size: 1.8em; }
-h3 {
-	font-size: 1em;
-	text-transform: uppercase;
-}
-h4 { font-size: 0.8em; }
-h5 { font-size: 0.6em; }
-h6 { font-size: 0.5em; }
-p {
-    font-size: 0.5em;
-    margin-top: 1em;
-}
-.container small {
-	font-size: 0.5em;
-}
-p, ul {
-    margin-bottom: 1.4em;
-}
-ul {
-    font-size: 0.5em;
-    list-style-type: square;
-    padding-left: 1em;
+.citations ol {
+	list-style-type: circle;
 }
 .linklist {
-    font-size: 0.6em;
-    margin-bottom: 1.4em;
+	margin-bottom: 1.4em;
 }
 .linklist li {
-    margin-bottom: 1.2em;
+	margin-bottom: 1.2em;
 }
 
 /* Sections */
 
 #footer {
+	font-weight: 100;
 	padding: 1.4em;
+	text-align: center;
+}
+#footer p, #footer li {
+	font-size: 1.5rem;
+}
+#footer a {
+	color: #EF4036;
+}
+#footer li a {
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	padding-right: 1em;
+	border-bottom: 0;
 }
 
 /* Bootstrap overrides */
