@@ -5,10 +5,10 @@ var overworked = (function() {
     function init() {
         $('body').flowtype({
             minimum   : 100,
-            maximum   : width / 1.4,
-            minFont   : 14,
-            maxFont   : 80,
-            fontRatio : 30
+            maximum   : width / 1.2,
+            minFont   : 12,
+            maxFont   : 60,
+            fontRatio : 36
         });
     }
 
