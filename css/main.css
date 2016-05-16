@@ -201,16 +201,18 @@ blockquote cite {
 #footer {
 	font-weight: 100;
 	padding: 1.4em;
+	color: white;
 	text-align: center;
 }
-#footer p, #footer li {
+#footer p,
+#footer li {
 	font-size: 1.5rem;
 }
 #footer a {
-	color: #EF4036;
+	color: #B2806E;
 }
 #footer li a {
-	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid #B2806E;
 	padding-right: 1em;
 	border-bottom: 0;
 }
@@ -263,4 +265,7 @@ blockquote cite {
 	.subsection {
 		margin-top: 0;
 	}
+}
+iframe {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
